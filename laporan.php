@@ -48,6 +48,7 @@ while ($a = mysqli_fetch_array($data)) {
                     <?php echo $a['periode_tglawal']; ?> s/d <?php echo $a['periode_tglakhir']; ?>
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col">
                     <strong>Nama GTK:</strong><br>
@@ -61,7 +62,7 @@ while ($a = mysqli_fetch_array($data)) {
                 </div>
             </div>
         </div>
-
+        <br>
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
@@ -157,10 +158,25 @@ while ($a = mysqli_fetch_array($data)) {
                 </div>
             </div>
         </div>
-        </div>
+        <br>
+        <div class="row">
+                <div class="col">
+                    <br>
+                    <strong>Pengajar</strong><br><br><br><br>
+                    <?php echo $a['peserta_nuptk']; ?><br />
+                    <?php echo $a['peserta_nama']; ?>
+                </div>
+                <div class="col">
+                    <strong>Malang, <?php echo date("d F Y")?></strong><br>
+                    <strong>Penguji</strong><br><br><br><br>
+                    <?php echo $a['penguji_nuptk']; ?><br />
+                    <?php echo $a['penguji_nama']; ?>
+                </div>
+            </div>
+            <br>
     </body>
     <script>
-        window.print()
+        window.print();
     </script>
 
     </html>
